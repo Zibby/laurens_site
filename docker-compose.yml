@@ -14,6 +14,12 @@ services:
       - traefik.http.routers.lauren.tls.certresolver=le
       - com.centurylinklabs.watchtower.enable=true
       - traefik.http.routers.lauren.middlewares=secured@file
+    logging:
+      driver: loki
+      options:
+        loki-url: "http://127.0.0.1:3100/loki/api/v1/push"
+        loki-retries: "5"
+        loki-batch-size: "400"
 networks:
   traefik2_default:
     external: true
