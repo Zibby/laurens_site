@@ -1,7 +1,7 @@
 version: '3'
 services:
   lauren_website:
-    container_name: laurenswebsite
+    container_name: docker.pkg.github.com/zibby/laurens_site/laurenswebsite
     networks:
       - traefik2_default
     image: zibby/laurenswebsite
