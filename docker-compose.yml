@@ -1,10 +1,10 @@
 version: '3'
 services:
   lauren_website:
-    container_name: docker.pkg.github.com/zibby/laurens_site/laurenswebsite
+    container_name: lauren_website
     networks:
       - traefik2_default
-    image: zibby/laurenswebsite
+    image: docker.pkg.github.com/zibby/laurens_site/laurenswebsite
     restart: always
     labels:
       - traefik.enable=true
