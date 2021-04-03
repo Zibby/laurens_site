@@ -1,0 +1,158 @@
+body {
+    background-color: teal;
+    background-image: url('/img/work-grime.jpg');
+    background-repeat: no-repeat;
+    font-family: 'Muli', sans-serif;
+    padding: 0 20px;
+}
+
+.container {
+    background-color:white;
+    margin: 20px auto;
+    min-height:500px;
+    width: auto;
+}
+
+.navbar {
+    padding:.5rem 0;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus {
+    border:none;
+    outline:none;
+    padding: .25rem 0;
+}
+
+h1,
+h2 {
+    border-bottom: 2px solid teal;
+    font-size: 1.5rem!important;
+    margin: 0.5rem 0 1rem 0;
+    padding-bottom: 10px;
+}
+
+.nav-tabs {
+    border-bottom: 2px solid teal;
+    font-size: 1.5rem;
+    margin: 0.1rem 0 1rem 0;
+    padding-bottom: 7px;
+}
+
+@media (max-width: 767.9px) {
+    .nav-tabs {
+       font-size: 1rem;
+    }
+
+    h1 {
+        text-align: center;
+    }
+    
+    .tab-content {
+        height: 295px;
+        overflow: scroll;
+    }
+
+    .portfolio {
+        max-height: 1000px;
+        overflow: scroll;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav-tabs .nav-item {
+        text-align: left;
+    }
+}
+
+.nav-tabs .nav-link {
+    color: rgba(0,0,0,.5);
+    padding: 0;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    color: black !important;
+}
+
+.dropdown-item.active,
+.dropdown-item:active,
+.dropdown-item:hover{
+    color: black !important;
+    background-color: transparent;
+}
+
+.thumb {
+    padding: 7px 0;
+}
+
+.portfolio::-webkit-scrollbar,
+.tab-content::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+.portfolio,
+.tab-content {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+}
+
+.tab-content ul {
+    padding-left: 20px;
+    margin-bottom:0;
+    margin-block-end:0;
+}
+
+.text-teal {
+    color: teal;
+}
+
+.portfolio-tile {
+    align-items: center;
+    display: flex;
+    margin: 0.5rem 0 1rem 0;
+    flex-direction: column;
+}
+
+
+.portfolio-tile img {
+    background-color: #dee2e6;
+    width: 320px;
+}
+
+.caption {
+    background-color: teal;
+    border-bottom: 2px solid teal;
+    bottom: 15%;
+    color:white;
+    padding: 5px 10px;
+    position: absolute;
+    width: fit-content;
+}
+
+.form-control:focus {
+    border-color: teal;
+    box-shadow:none;
+}
+
+.btn-submit,
+.btn-submit.active,
+.btn-submit:active,
+.btn-submit:active:focus,
+.btn-submit:hover,
+.btn-submit:focus {
+    color: #fff;
+    background-color: teal;
+    border-color: teal;
+    box-shadow:none;
+}
+
+.btn-submit.active,
+.btn-submit:active,
+.btn-submit:active:focus,
+.btn-submit:hover,
+.btn-submit:focus {
+    text-decoration: underline;
+}
