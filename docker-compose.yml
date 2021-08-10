@@ -8,7 +8,7 @@ services:
     restart: always
     labels:
       - traefik.enable=true
-      - traefik.http.routers.lauren.rule=Host(`lauren.zibbytechnology.ddns.net`)
+      - traefik.http.routers.lauren.rule=Host(`lauren.zibbu.technology`,`lauren.zibbytechnology.ddns.net`)
       - traefik.http.routers.lauren.entrypoints=web,web-secure
       - traefik.http.routers.lauren.tls=true
       - traefik.http.routers.lauren.tls.certresolver=le
